@@ -96,9 +96,10 @@ main {
 .menu-gorros{
     display: flex;
     border: solid 0px black;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-between;
+    align-content: space-around;
     gap: 19px;
 }
 
