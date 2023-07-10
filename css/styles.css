@@ -11,6 +11,10 @@ header {
     width: 100%;
 }
 
+.menu-principal{
+    position: relative;
+}
+
 .menu-principal nav ul{
     background-color: #242121f5;
     display: flex;
@@ -251,6 +255,7 @@ h5{
     text-decoration: underline;
 }
 
+
 /*grilla pestana nosotros*/
 
 .container {  display: grid;
@@ -465,6 +470,9 @@ button:active {
         margin: 0px;
         width: 350px;
         height: 1100px;
+    }
+    .foto-banner {
+        height: 380px;
     }
 }
 
