@@ -1,0 +1,580 @@
+@import "footer";
+
+* {
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #242121f5;
+    width: 100%;
+}
+
+.menu-principal {
+    position: relative;
+    nav ul {
+        background-color: #242121f5;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        list-style-type: none;
+        padding: 20px;
+        li a {
+            color: orangered;
+            font-weight: bold;
+            font-size: 24px;
+            margin: 10px;
+        }
+    }
+}
+
+/** main **/
+
+.datos-registro {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    color: #dbd3d3c7;
+    padding: 15px;
+    margin: 10px;
+
+    p {
+        padding: 15px;
+        margin: 10px;
+    }
+}
+
+.email-pass {
+    border: 2px solid black;
+    list-style-type: none;
+    padding: 15px;
+    margin: 10px;
+}
+
+.foto-banner {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+    background-image: url(../multimedia/img/gif3.gif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 300px;
+    opacity: 0.7;
+
+    h1 {
+        width: 100%;
+        color: white;
+        text-align: center;
+        font-size: 75px;
+    }
+}
+
+main {
+    background-color: #242121f5;
+    margin: 0%;
+    padding: 1%;
+}
+
+.banner2gorras {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    margin: 10px;
+}
+
+.bannermain1 a img {
+    border: 0px solid #ddd;
+    border-radius: 5px;
+    padding: 5px;
+    width: 300px;
+    height: 200px;
+    box-shadow: 0 0 15px 3px #bead0c;
+}
+
+.menu-gorros {
+    display: flex;
+    border: solid 0px black;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: space-around;
+    gap: 20px;
+
+}
+
+.tarjeta-gorras {
+    display: flex;
+    flex-direction: column;
+    background-color: #242121f5;
+    width: 150px;
+    border: solid 1px black;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 20px;
+}
+
+.presentacionAtila {
+    display: flex;
+    padding: 10px;
+    margin: 20px;
+    flex-direction: column-reverse;
+    align-items: center;
+
+}
+
+.texto-somos {
+    h2 {
+        color: white;
+        text-align: center;
+        font-size: 30px;
+        text-decoration: underline;
+    }
+
+    article h4 {
+        color: white;
+        text-align: left;
+        font-size: 23px;
+    }
+
+    article p {
+        color: white;
+        text-align: justify;
+        font-size: 15px;
+        text-indent: 1%;
+        letter-spacing: 2px;
+    }
+}
+
+.productos-gorra-section {
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.producto-gorra {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    color: white;
+    border: 0px solid #ddd;
+    border-radius: 8px;
+    padding: 2px;
+    width: 175px;
+    box-shadow: 0 0 10px 3px #bead0c;
+    text-align: center;
+    text-decoration: underline;
+
+    img {
+        width: 97%;
+        border: #bead0c;
+        padding: 5px;
+    }
+}
+
+
+
+.textoPaginaNosotros {
+    color: white;
+    text-align: justify;
+    font-size: 15px;
+    line-height: 1.5;
+    margin: 10px;
+    padding: 5px;
+
+    h2 {
+        text-decoration: underline;
+        text-align: center;
+        padding: 20px;
+    }
+}
+
+.imgNosotros1 img {
+    margin: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+.imgNosotros2 img {
+    padding: 0px;
+    margin: 10px;
+    width: 400px;
+    height: 250px;
+}
+
+.quienesSomos {
+    text-decoration: underline;
+    color: white;
+    padding: 10px;
+    margin: 10px;
+    font-size: 20px;
+    text-align: left;
+    font-weight: bold;
+
+    ul li {
+        font-size: 15px;
+    }
+}
+
+
+
+/*grilla pestana nosotros*/
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "textoPaginaNosotros textoPaginaNosotros imgNosotros1"
+        "textoPaginaNosotros textoPaginaNosotros imgNosotros1"
+        "quienesSomos . imgNosotros1"
+        "imgNosotros2 imgNosotros2 .";
+}
+
+.textoPaginaNosotros {
+    grid-area: textoPaginaNosotros;
+}
+
+.imgNosotros2 {
+    grid-area: imgNosotros2;
+}
+
+.imgNosotros1 {
+    grid-area: imgNosotros1;
+}
+
+.quienesSomos {
+    grid-area: quienesSomos;
+}
+
+
+/*-_-*/
+
+button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    cursor: pointer;
+
+}
+
+.carousel-item img {
+    width: 100%;
+    padding: 10px 10px;
+    height: 470px;
+    object-fit: cover;
+}
+
+button:active {
+    background-color: #425ba1;
+}
+
+
+/* Medias Queries */
+
+
+@media (min-width: 480px) {
+    .banner2gorras {
+        display: flex;
+        justify-content: space-around;
+        padding: 20px;
+        margin: 10px;
+    }
+
+    .textoPaginaNosotros {
+        font-size: 17px;
+    }
+
+    .quienesSomos {
+        font-size: 17px;
+        padding: 9px;
+        margin: 12px;
+    }
+
+    .imgNosotros2 img {
+        padding: 0px;
+        margin: 0px;
+        width: 450px;
+        height: 290px;
+        background-size: cover;
+    }
+
+    .imgNosotros1 img {
+        margin: 0px;
+        width: 220px;
+        height: 1100px;
+    }
+}
+
+
+
+@media (min-width: 768px) {
+    .datos-registro {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        color: #dbd3d3c7;
+        padding: 20px;
+        margin: 45px;
+    }
+
+    .email-pass {
+        border: 4px solid black;
+        list-style-type: none;
+        padding: 15px;
+        margin: 10px;
+    }
+
+    .banner2gorras {
+        flex-direction: row;
+        margin: 10px;
+    }
+
+    .menu-gorros {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 20px;
+    }
+
+    .texto-somos article p {
+        color: white;
+        text-align: justify;
+        font-size: 20px;
+        letter-spacing: 2px;
+    }
+
+    .menu-principal nav ul li a {
+        color: orangered;
+        font-weight: bold;
+        font-size: 35px;
+        margin: 10px;
+    }
+
+    .productos-gorra-section {
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .producto-gorra {
+        border-radius: 8px;
+        padding: 5px;
+        width: 250px;
+    }
+
+    .textoPaginaNosotros {
+        font-size: 23px;
+    }
+
+    .quienesSomos {
+        font-size: 23px;
+        padding: 5px;
+        margin: 10px;
+    }
+
+    .imgNosotros2 img {
+        padding: 0px;
+        margin: 0px;
+        width: 740px;
+        height: 400px;
+        object-fit: cover;
+    }
+
+    .imgNosotros1 img {
+        margin: 0px;
+        width: 300px;
+        height: 1100px;
+    }
+}
+
+
+
+@media (min-width: 1024px) {
+
+    .presentacionAtila {
+        flex-direction: row-reverse;
+    }
+
+    .datos-registro {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        color: #dbd3d3c7;
+        padding: 25px;
+        margin: 45px;
+    }
+
+    .email-pass {
+        border: 4px solid black;
+        list-style-type: none;
+        padding: 15px;
+        margin: 10px;
+    }
+
+    .bannermain1 a img {
+        border: 0px solid #ddd;
+        border-radius: 5px;
+        padding: 5px;
+        width: 400px;
+        height: 310px;
+    }
+
+    .tarjeta-gorras {
+        display: flex;
+        flex-direction: column;
+        background-color: #242121f5;
+        width: 195px;
+        border: solid 2px black;
+        border-radius: 20px;
+        padding: 10px;
+        margin: 20px;
+    }
+
+    .productos-gorra-section {
+        display: flex;
+        gap: 75px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .producto-gorra {
+        border: 0px solid #ddd;
+        border-radius: 8px;
+        padding: 2px;
+        width: 250px;
+        box-shadow: 0 0 15px 5px #bead0c;
+        text-align: center;
+        text-decoration: underline;
+    }
+
+    .imgNosotros2 img {
+        width: 975px;
+        object-fit: cover;
+    }
+
+    .imgNosotros1 img {
+        margin: 0px;
+        width: 350px;
+        height: 1100px;
+    }
+
+    .foto-banner {
+        height: 380px;
+    }
+}
+
+
+
+@media (min-width: 1440px) {
+    .presentacionAtila {
+        flex-direction: row-reverse;
+    }
+
+    .datos-registro {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        color: #dbd3d3c7;
+        padding: 25px;
+        margin: 100px;
+    }
+
+    .email-pass {
+        border: 4px solid black;
+        list-style-type: none;
+        padding: 20px;
+        margin: 10px;
+    }
+
+    .banner2gorras {
+        flex-direction: row;
+        margin: 10px;
+    }
+
+    .bannermain1 a img {
+        border: 0px solid #ddd;
+        border-radius: 5px;
+        padding: 5px;
+        width: 500px;
+        height: 370px;
+    }
+
+    .menu-gorros {
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 20px;
+        gap: 50px;
+    }
+
+    .tarjeta-gorras {
+        width: 250px;
+        border: solid 4px black;
+        border-radius: 15px;
+        padding: 20px;
+        margin: 40px;
+    }
+
+    .texto-somos article p {
+        color: white;
+        text-align: justify;
+        font-size: 24px;
+        letter-spacing: 3px;
+    }
+
+    .menu-principal nav ul li a {
+        color: orangered;
+        font-weight: bold;
+        font-size: 40px;
+        margin: 15px;
+    }
+
+    .productos-gorra-section {
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        gap: 125px;
+    }
+
+    .producto-gorra {
+        border-radius: 8px;
+        padding: 20px;
+        width: 390px;
+    }
+
+    .textoPaginaNosotros {
+        font-size: 30px;
+    }
+
+    .quienesSomos {
+        font-size: 25px;
+        padding: 40px;
+        margin: 10px;
+    }
+
+    .imgNosotros2 img {
+        padding: 0px;
+        margin: 0px;
+        width: 1200px;
+        object-fit: cover;
+
+    }
+
+    .imgNosotros1 img {
+        margin: 20px;
+        width: 600px;
+        height: 1100px;
+    }
+
+    .foto-banner {
+        height: 500px;
+    }
+}
