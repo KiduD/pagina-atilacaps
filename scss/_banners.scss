@@ -1,0 +1,35 @@
+.foto-banner {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+    background-image: url(../multimedia/img/gif3.gif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 300px;
+    opacity: 0.7;
+
+    h1 {
+        width: 100%;
+        color: white;
+        text-align: center;
+        font-size: 75px;
+    }
+}
+.banner2gorras {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    margin: 10px;
+}
+
+.bannermain1 a img {
+    border: 0px solid #ddd;
+    border-radius: 5px;
+    padding: 5px;
+    width: 300px;
+    height: 200px;
+    box-shadow: 0 0 15px 3px #bead0c;
+}

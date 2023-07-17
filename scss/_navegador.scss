@@ -1,0 +1,34 @@
+.menu-principal {
+    position: relative;
+    nav ul {
+        background-color: #242121f5;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        list-style-type: none;
+        
+        li a {
+            color: orangered;
+            font-weight: bold;
+            font-size: 18px;
+            text-decoration:underline;
+            display: block;
+            &:hover + ul{
+                max-height: 500px;
+            }
+        }
+    }
+    .desplegable {
+        background-color: orange;
+        position: absolute;
+        display: flex;
+        max-height: 0px;
+        overflow: hidden;
+        transition: 1.5s;
+        color: white;
+        font-weight: bold;
+        font-size: 20px;
+
+    }
+}

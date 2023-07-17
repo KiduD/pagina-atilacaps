@@ -28,16 +28,48 @@ h5 {
   text-decoration: underline;
 }
 
-* {
-  margin: 0%;
-  padding: 0%;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  box-sizing: border-box;
+.menu-gorros {
+  display: flex;
+  border: solid 0px black;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: space-around;
+  gap: 20px;
+}
+.menu-gorros .tarjeta-gorras {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(36, 33, 33, 0.9607843137);
+  width: 150px;
+  border: solid 1px black;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 20px;
 }
 
-header {
-  background-color: rgba(36, 33, 33, 0.9607843137);
-  width: 100%;
+.productos-gorra-section {
+  display: flex;
+  gap: 25px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.productos-gorra-section .producto-gorra {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  color: white;
+  border: 0px solid #ddd;
+  border-radius: 8px;
+  padding: 2px;
+  width: 175px;
+  box-shadow: 0 0 10px 3px #bead0c;
+  text-align: center;
+  text-decoration: underline;
+}
+.productos-gorra-section .producto-gorra img {
+  width: 97%;
+  border: #bead0c;
+  padding: 5px;
 }
 
 .menu-principal {
@@ -73,27 +105,6 @@ header {
   font-size: 20px;
 }
 
-/** main **/
-.datos-registro {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  color: rgba(219, 211, 211, 0.7803921569);
-  padding: 15px;
-  margin: 10px;
-}
-.datos-registro p {
-  padding: 15px;
-  margin: 10px;
-}
-
-.email-pass {
-  border: 2px solid black;
-  list-style-type: none;
-  padding: 15px;
-  margin: 10px;
-}
-
 .foto-banner {
   display: flex;
   flex-wrap: wrap;
@@ -110,12 +121,6 @@ header {
   color: white;
   text-align: center;
   font-size: 75px;
-}
-
-main {
-  background-color: rgba(36, 33, 33, 0.9607843137);
-  margin: 0%;
-  padding: 1%;
 }
 
 .banner2gorras {
@@ -136,24 +141,37 @@ main {
   box-shadow: 0 0 15px 3px #bead0c;
 }
 
-.menu-gorros {
-  display: flex;
-  border: solid 0px black;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-content: space-around;
-  gap: 20px;
+.imgNosotros1 img {
+  margin: 0px;
+  width: 100%;
+  height: 100%;
 }
 
-.tarjeta-gorras {
+.imgNosotros2 img {
+  padding: 0px;
+  margin: 10px;
+  width: 400px;
+  height: 250px;
+}
+
+.datos-registro {
   display: flex;
   flex-direction: column;
-  background-color: rgba(36, 33, 33, 0.9607843137);
-  width: 150px;
-  border: solid 1px black;
-  border-radius: 10px;
-  padding: 10px;
-  margin: 20px;
+  align-items: flex-end;
+  color: rgba(219, 211, 211, 0.7803921569);
+  padding: 15px;
+  margin: 10px;
+}
+.datos-registro p {
+  padding: 15px;
+  margin: 10px;
+}
+
+.email-pass {
+  border: 2px solid black;
+  list-style-type: none;
+  padding: 15px;
+  margin: 10px;
 }
 
 .presentacionAtila {
@@ -183,32 +201,6 @@ main {
   letter-spacing: 2px;
 }
 
-.productos-gorra-section {
-  display: flex;
-  gap: 25px;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.producto-gorra {
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
-  color: white;
-  border: 0px solid #ddd;
-  border-radius: 8px;
-  padding: 2px;
-  width: 175px;
-  box-shadow: 0 0 10px 3px #bead0c;
-  text-align: center;
-  text-decoration: underline;
-}
-.producto-gorra img {
-  width: 97%;
-  border: #bead0c;
-  padding: 5px;
-}
-
 .textoPaginaNosotros {
   color: white;
   text-align: justify;
@@ -221,19 +213,6 @@ main {
   text-decoration: underline;
   text-align: center;
   padding: 20px;
-}
-
-.imgNosotros1 img {
-  margin: 0px;
-  width: 100%;
-  height: 100%;
-}
-
-.imgNosotros2 img {
-  padding: 0px;
-  margin: 10px;
-  width: 400px;
-  height: 250px;
 }
 
 .quienesSomos {
@@ -249,7 +228,6 @@ main {
   font-size: 15px;
 }
 
-/*grilla pestana nosotros*/
 .container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -275,7 +253,24 @@ main {
   grid-area: quienesSomos;
 }
 
-/*-_-*/
+* {
+  margin: 0%;
+  padding: 0%;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: rgba(36, 33, 33, 0.9607843137);
+  width: 100%;
+}
+
+main {
+  background-color: rgba(36, 33, 33, 0.9607843137);
+  margin: 0%;
+  padding: 1%;
+}
+
 button {
   padding: 5px 10px;
   border: none;
@@ -297,7 +292,7 @@ button:active {
   background-color: #425ba1;
 }
 
-/* Medias Queries */
+/*Empiezan los MediaQueries */
 @media (min-width: 480px) {
   .banner2gorras {
     display: flex;

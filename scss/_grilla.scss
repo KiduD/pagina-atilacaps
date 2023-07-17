@@ -1,0 +1,28 @@
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "textoPaginaNosotros textoPaginaNosotros imgNosotros1"
+        "textoPaginaNosotros textoPaginaNosotros imgNosotros1"
+        "quienesSomos . imgNosotros1"
+        "imgNosotros2 imgNosotros2 .";
+}
+
+.textoPaginaNosotros {
+    grid-area: textoPaginaNosotros;
+}
+
+.imgNosotros2 {
+    grid-area: imgNosotros2;
+}
+
+.imgNosotros1 {
+    grid-area: imgNosotros1;
+}
+
+.quienesSomos {
+    grid-area: quienesSomos;
+}

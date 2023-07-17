@@ -1,0 +1,81 @@
+.datos-registro {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    color: #dbd3d3c7;
+    padding: 15px;
+    margin: 10px;
+
+    p {
+        padding: 15px;
+        margin: 10px;
+    }
+}
+
+.email-pass {
+    border: 2px solid black;
+    list-style-type: none;
+    padding: 15px;
+    margin: 10px;
+}
+
+.presentacionAtila {
+    display: flex;
+    padding: 10px;
+    margin: 20px;
+    flex-direction: column-reverse;
+    align-items: center;
+
+}
+
+.texto-somos {
+    h2 {
+        color: white;
+        text-align: center;
+        font-size: 30px;
+        text-decoration: underline;
+    }
+
+    article h4 {
+        color: white;
+        text-align: left;
+        font-size: 23px;
+    }
+
+    article p {
+        color: white;
+        text-align: justify;
+        font-size: 15px;
+        text-indent: 1%;
+        letter-spacing: 2px;
+    }
+}
+
+.textoPaginaNosotros {
+    color: white;
+    text-align: justify;
+    font-size: 15px;
+    line-height: 1.5;
+    margin: 10px;
+    padding: 5px;
+
+    h2 {
+        text-decoration: underline;
+        text-align: center;
+        padding: 20px;
+    }
+}
+
+.quienesSomos {
+    text-decoration: underline;
+    color: white;
+    padding: 10px;
+    margin: 10px;
+    font-size: 20px;
+    text-align: left;
+    font-weight: bold;
+
+    ul li {
+        font-size: 15px;
+    }
+}
