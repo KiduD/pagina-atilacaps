@@ -1,75 +1,40 @@
-footer {
-  color: white;
-  background-color: rgba(0, 0, 0, 0.9607843137);
+* {
   margin: 0%;
-  padding: 2%;
-  font-weight: bold;
-  font-size: 20px;
+  padding: 0%;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  box-sizing: border-box;
 }
 
-.contactos ul {
-  padding: 10px;
-  margin: 10px;
-  list-style-type: none;
-}
-
-h5 {
-  margin: 10px;
-  padding: 5px;
-}
-
-.mapa-iframe {
-  display: flex;
-  width: 80%;
-}
-
-.volver-arriba:hover {
-  color: orangered;
-  text-decoration: underline;
-}
-
-.menu-gorros {
-  display: flex;
-  border: solid 0px black;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-content: space-around;
-  gap: 20px;
-}
-.menu-gorros .tarjeta-gorras {
-  display: flex;
-  flex-direction: column;
+header {
   background-color: rgba(36, 33, 33, 0.9607843137);
-  width: 150px;
-  border: solid 1px black;
-  border-radius: 10px;
-  padding: 10px;
-  margin: 20px;
+  width: 100%;
 }
 
-.productos-gorra-section {
-  display: flex;
-  gap: 25px;
-  flex-wrap: wrap;
-  justify-content: center;
+main {
+  background-color: rgba(36, 33, 33, 0.9607843137);
+  margin: 0%;
+  padding: 1%;
 }
-.productos-gorra-section .producto-gorra {
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
-  color: white;
-  border: 0px solid #ddd;
-  border-radius: 8px;
-  padding: 2px;
-  width: 175px;
-  box-shadow: 0 0 10px 3px #bead0c;
-  text-align: center;
-  text-decoration: underline;
+
+button {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #4CAF50;
+  color: rgb(255, 255, 255);
+  font-size: 15px;
+  cursor: pointer;
 }
-.productos-gorra-section .producto-gorra img {
-  width: 97%;
-  border: #bead0c;
-  padding: 5px;
+
+.carousel-item img {
+  width: 100%;
+  padding: 10px 10px;
+  height: 470px;
+  object-fit: cover;
+}
+
+button:active {
+  background-color: #425ba1;
 }
 
 .menu-principal {
@@ -94,7 +59,7 @@ h5 {
   max-height: 500px;
 }
 .menu-principal .desplegable {
-  background-color: orange;
+  background-color: #65a5d1;
   position: absolute;
   display: flex;
   max-height: 0px;
@@ -103,6 +68,63 @@ h5 {
   color: white;
   font-weight: bold;
   font-size: 20px;
+}
+
+.menu-gorros {
+  display: flex;
+  border: solid 0px black;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: space-around;
+  gap: 20px;
+}
+.menu-gorros .tarjeta-gorras {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(36, 33, 33, 0.9607843137);
+  width: 230px;
+  border: solid 1px black;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 20px;
+}
+
+.productos-gorra-section {
+  display: flex;
+  gap: 25px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.productos-gorra-section .producto-gorra {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  color: white;
+  border: 0px solid #ddd;
+  border-radius: 8px;
+  padding: 2px;
+  width: 180px;
+  box-shadow: 0 0 10px 3px #bead0c;
+  text-align: center;
+  text-decoration: underline;
+}
+.productos-gorra-section .producto-gorra img {
+  width: 97%;
+  border: #bead0c;
+  padding: 5px;
+}
+
+.imgNosotros1 img {
+  margin: 0px;
+  width: 100%;
+  height: 100%;
+}
+
+.imgNosotros2 img {
+  padding: 0px;
+  margin: 10px;
+  width: 400px;
+  height: 250px;
 }
 
 .foto-banner {
@@ -139,19 +161,6 @@ h5 {
   width: 300px;
   height: 200px;
   box-shadow: 0 0 15px 3px #bead0c;
-}
-
-.imgNosotros1 img {
-  margin: 0px;
-  width: 100%;
-  height: 100%;
-}
-
-.imgNosotros2 img {
-  padding: 0px;
-  margin: 10px;
-  width: 400px;
-  height: 250px;
 }
 
 .datos-registro {
@@ -253,46 +262,6 @@ h5 {
   grid-area: quienesSomos;
 }
 
-* {
-  margin: 0%;
-  padding: 0%;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  box-sizing: border-box;
-}
-
-header {
-  background-color: rgba(36, 33, 33, 0.9607843137);
-  width: 100%;
-}
-
-main {
-  background-color: rgba(36, 33, 33, 0.9607843137);
-  margin: 0%;
-  padding: 1%;
-}
-
-button {
-  padding: 5px 10px;
-  border: none;
-  border-radius: 5px;
-  background-color: #4CAF50;
-  color: rgb(255, 255, 255);
-  font-size: 15px;
-  cursor: pointer;
-}
-
-.carousel-item img {
-  width: 100%;
-  padding: 10px 10px;
-  height: 470px;
-  object-fit: cover;
-}
-
-button:active {
-  background-color: #425ba1;
-}
-
-/*Empiezan los MediaQueries */
 @media (min-width: 480px) {
   .banner2gorras {
     display: flex;
@@ -425,7 +394,7 @@ button:active {
   }
   .productos-gorra-section {
     display: flex;
-    gap: 75px;
+    gap: 120px;
     flex-wrap: wrap;
     justify-content: center;
   }
@@ -433,7 +402,7 @@ button:active {
     border: 0px solid #ddd;
     border-radius: 8px;
     padding: 2px;
-    width: 250px;
+    width: 50px;
     box-shadow: 0 0 15px 5px #bead0c;
     text-align: center;
     text-decoration: underline;
@@ -537,6 +506,36 @@ button:active {
   .foto-banner {
     height: 500px;
   }
+}
+footer {
+  color: white;
+  background: rgb(184, 87, 26);
+  background: radial-gradient(circle, rgb(184, 87, 26) 0%, rgb(0, 0, 0) 63%);
+  margin: 0%;
+  padding: 2%;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.contactos ul {
+  padding: 10px;
+  margin: 10px;
+  list-style-type: none;
+}
+
+h5 {
+  margin: 10px;
+  padding: 5px;
+}
+
+.mapa-iframe {
+  display: flex;
+  width: 80%;
+}
+
+.volver-arriba:hover {
+  color: orangered;
+  text-decoration: underline;
 }
 
 /*# sourceMappingURL=styles.css.map */
