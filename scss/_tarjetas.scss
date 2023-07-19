@@ -31,7 +31,7 @@
         border: 0px solid #ddd;
         border-radius: 8px;
         padding: 2px;
-        width: 180px;
+        width: 194px;
         box-shadow: 0 0 10px 3px #bead0c;
         text-align: center;
         text-decoration: underline;
@@ -53,4 +53,15 @@
     margin: 10px;
     width: 400px;
     height: 250px;
+}
+
+.producto-gorra{
+    overflow: hidden;
+    img {
+        transition: transform 0.3s;
+    }
+}
+
+.producto-gorra:hover img {
+    transform: scale(1.3);
 }
