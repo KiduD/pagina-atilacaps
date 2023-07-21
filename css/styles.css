@@ -16,6 +16,21 @@ main {
   padding: 1%;
 }
 
+.carousel-item img {
+  width: 100%;
+  padding: 10px 10px;
+  height: 470px;
+  object-fit: cover;
+}
+.carousel-item h5 {
+  color: white;
+  text-shadow: 2px 2px 2px black;
+}
+
+button:active {
+  background-color: #425ba1;
+}
+
 button {
   padding: 5px 10px;
   border: none;
@@ -26,19 +41,11 @@ button {
   cursor: pointer;
 }
 
-.carousel-item img {
-  width: 100%;
-  padding: 10px 10px;
-  height: 470px;
-  object-fit: cover;
-}
-
-button:active {
-  background-color: #425ba1;
-}
-
 .menu-principal {
   position: relative;
+  /*  
+  Menu contactos desplegable
+  */
 }
 .menu-principal nav ul {
   background-color: rgba(36, 33, 33, 0.9607843137);
@@ -59,13 +66,14 @@ button:active {
   max-height: 500px;
 }
 .menu-principal .desplegable {
-  background-color: #242121;
+  background-color: #6da6d5;
   position: absolute;
   display: flex;
   max-height: 0px;
   overflow: hidden;
   transition: 1.5s;
   color: white;
+  text-shadow: 1px 1px 1px black;
   font-weight: bold;
   font-size: 20px;
 }
@@ -123,7 +131,7 @@ button:active {
 .imgNosotros2 img {
   padding: 0px;
   margin: 10px;
-  width: 400px;
+  width: 350px;
   height: 250px;
 }
 
@@ -419,7 +427,7 @@ button:active {
     text-decoration: underline;
   }
   .imgNosotros2 img {
-    width: 975px;
+    width: 1225px;
     object-fit: cover;
   }
   .imgNosotros1 img {
@@ -506,7 +514,7 @@ button:active {
   .imgNosotros2 img {
     padding: 0px;
     margin: 0px;
-    width: 1200px;
+    width: 1300px;
     object-fit: cover;
   }
   .imgNosotros1 img {

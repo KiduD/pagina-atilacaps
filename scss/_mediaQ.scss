@@ -63,7 +63,7 @@
     }
 
     .texto-somos article p {
-        color: white;
+        color: $colorTexto;
         text-align: justify;
         font-size: 20px;
         letter-spacing: 2px;
@@ -173,7 +173,7 @@
     }
 
     .imgNosotros2 img {
-        width: 975px;
+        width: 1225px;
         object-fit: cover;
     }
 
@@ -240,7 +240,7 @@
     }
 
     .texto-somos article p {
-        color: white;
+        color: $colorTexto;
         text-align: justify;
         font-size: 24px;
         letter-spacing: 3px;
@@ -278,7 +278,7 @@
     .imgNosotros2 img {
         padding: 0px;
         margin: 0px;
-        width: 1200px;
+        width: 1300px;
         object-fit: cover;
 
     }

@@ -1,7 +1,7 @@
 .menu-principal {
     position: relative;
     nav ul {
-        background-color: #242121f5;
+        background-color: $colorFondo;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -19,14 +19,20 @@
             }
         }
     }
+    
+    /*  
+    Menu contactos desplegable
+    */
+
     .desplegable {
-        background-color: #242121;
+        background-color: #6da6d5;
         position: absolute;
         display: flex;
         max-height: 0px;
         overflow: hidden;
         transition: 1.5s;
-        color: white;
+        color: $colorTexto;
+        text-shadow: 1px 1px 1px black;
         font-weight: bold;
         font-size: 20px;
 

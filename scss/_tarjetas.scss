@@ -9,7 +9,7 @@
     .tarjeta-gorras {
         display: flex;
         flex-direction: column;
-        background-color: #242121f5;
+        background-color: $colorFondo;
         width: 230px;
         border: solid 1px black;
         border-radius: 10px;
@@ -27,7 +27,7 @@
         display: flex;
         flex-direction: column;
         gap: 5px;
-        color: white;
+        color: $colorTexto;
         border: 0px solid #ddd;
         border-radius: 8px;
         padding: 2px;
@@ -51,7 +51,7 @@
 .imgNosotros2 img {
     padding: 0px;
     margin: 10px;
-    width: 400px;
+    width: 350px;
     height: 250px;
 }
 

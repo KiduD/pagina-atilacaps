@@ -30,20 +30,20 @@
 
 .texto-somos {
     h2 {
-        color: white;
+        color: $colorTexto;
         text-align: center;
         font-size: 30px;
         text-decoration: underline;
     }
 
     article h4 {
-        color: white;
+        color: $colorTexto;
         text-align: left;
         font-size: 23px;
     }
 
     article p {
-        color: white;
+        color: $colorTexto;
         text-align: justify;
         font-size: 15px;
         text-indent: 1%;
@@ -52,7 +52,7 @@
 }
 
 .textoPaginaNosotros {
-    color: white;
+    color: $colorTexto;
     text-align: justify;
     font-size: 15px;
     line-height: 1.5;
@@ -68,7 +68,7 @@
 
 .quienesSomos {
     text-decoration: underline;
-    color: white;
+    color: $colorTexto;
     padding: 10px;
     margin: 10px;
     font-size: 20px;
